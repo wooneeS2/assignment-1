@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "ROKAFSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts2201-3@1.0/ROKAFSansBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#background-box {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#background-box::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url("https://cdn.pixabay.com/photo/2020/04/06/17/56/berlin-5010635_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.main-title {
+  display: flex;
+  position: relative;
+  margin: 0;
+  color: #fff;
+  font-size: 3.5rem;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "ROKAFSansBold";
+}
+
+.main-title::before,
+.main-title::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: attr(data-text);
+}
+.main-title::before {
+  color: #a70000;
+  z-index: -1;
+  animation: glitch01 2s ease infinite;
+}
+.main-title::after {
+  color: #59b7d3;
+  z-index: -2;
+  animation: glitch02 2s ease infinite reverse;
+}
+@keyframes glitch01 {
+  0% {
+    transform: translate(-2px, 2px);
+  }
+  25% {
+    transform: translate(-4px, 4px);
+  }
+  50% {
+    transform: translate(2px, 2px);
+  }
+  75% {
+    transform: translate(2px, -4px);
+  }
+  100% {
+    transform: translate(-2px, 2px);
+  }
+}
+@keyframes glitch02 {
+  0% {
+    transform: translate(-2px, 2px);
+  }
+  25% {
+    transform: translate(-4px, 4px);
+  }
+  50% {
+    transform: translate(2px, 2px);
+  }
+  75% {
+    transform: translate(2px, -4px);
+  }
+  100% {
+    transform: translate(-2px, 2px);
+  }
+}
+
+#chevron-down {
+  z-index: 1;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 900;
+  display: inline-block;
+  vertical-align: bottom;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+#map-box {
+  width: 100%;
+  height: 100vh;
+  background-color: antiquewhite;
+}
