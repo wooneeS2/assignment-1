@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,6 +7,7 @@
     <title>코로나, 끝나지 않는 굴레</title>
     <link rel="stylesheet" href="./styles.module.css" />
     <script src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   </head>
   <body>
     <div id="background-box">
@@ -17,12 +18,55 @@
       <i class="fa-solid fa-chevron-down" id="chevron-down"></i>
     </div>
 
-    <div id="map-box">
-      <div>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci fuga
-        doloribus pariatur, at optio amet quia beatae ullam eum natus dicta
-        corporis nam, ratione minima quibusdam inventore odio aliquam sit?
+    <div class="map-box">
+      <div class="map-text-box">
+        <p id="map-text-date">2020년 1월 18일</p>
+        <p id="map-text-content">
+          중국 후베이성 우한에 사는 A 씨(35)는 출국을 하루 앞두고 발열 오한 등
+          감기 증상이 나타났다. 시내 병원에서 진료를 받고 감기약을 처방받았다.
+        </p>
       </div>
+      <div id="map1" style="width: 100%; height: 100vh"></div>
+      <script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBur_PMKN5jSmozFUuv4eC-gRhkBLC6hPM&callback=initMap&region=kr"
+      ></script>
     </div>
+    <div class="map-box">
+      <div class="map-text-box">
+        <p id="map-text-date">1월 19일 오전</p>
+        <p id="map-text-content">
+          A 씨는 우한 공항에서 한국 인천으로 가는 비행기를 탔다. 가족 2명, 친구
+          가족 3명 등 5명이 동행했다. 일본 여행을 가기 위해 인천에서 환승하는
+          일정이었다.
+        </p>
+      </div>
+      <div id="map2" style="width: 100%; height: 100vh"></div>
+    </div>
+    <div class="map-box">
+      <div class="map-text-box">
+        <p id="map-text-date">1월 19일 오후 12시 25분</p>
+        <p id="map-text-content">
+          비행기에서 내린 A 씨가 인천공항 탑승동 게이트로 향했다. 체온을 쟀는데
+          38.0도가 나왔다. 여기에 발열, 오한, 근육통, 콧물 증상이 있었다.
+          검역당국의 판단에 따라 A 씨 는 임시격리실로 이동했다.
+        </p>
+      </div>
+      <div id="map3" style="width: 100%; height: 100vh"></div>
+    </div>
+    <div class="map-box">
+      <div class="map-text-box">
+        <p id="map-text-date">1월 19일 오후 3시</p>
+        <p id="map-text-content">
+          A 씨는 검역관과 임시격리실을 나와 공항 1층으로 나갔다. 건물 앞에 대기
+          중이던 구급 차로 인천의료원에 이송됐다. 1월 20일 오전 8시, A 씨는
+          코로나19 확진 판정을 받았 다. A 씨는 국내에서 확인된 첫 코로나19
+          환자였다.
+        </p>
+      </div>
+      <div id="map4" style="width: 100%; height: 100vh"></div>
+    </div>
+    <script src="./index.js"></script>
   </body>
 </html>
