@@ -1,19 +1,58 @@
+#world-map-box {
+  display: display;
+}
+
+#world-map-contents {
+  display: flex;
+}
+
+#world-map-text-content {
+  z-index: 30;
+  display: flex;
+  margin-left: 1rem;
+  margin-bottom: -1rem;
+  width: 45%;
+
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 3px 10px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 1.2rem;
+  word-break: keep-all;
+  display: flex;
+}
+
+.tooltip {
+  display: flex;
+  text-align: center;
+  color: #3d0208;
+  background-color: rgba(88, 4, 12, 0.2);
+  box-shadow: 1px 3px 10px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 30%;
+  height: 3rem;
+  z-index: 20;
+  padding: 1rem;
+  margin: 2rem;
+  margin-top: 3rem;
+}
+
 img {
   width: 100%;
 }
 
 .container {
   width: 80%;
+  height: auto;
   margin: 0 auto;
+  margin-top: auto;
 }
 
 .overlay {
-  position: absolute;
-  height: 100%;
   width: 100%;
   z-index: 1;
   top: 0;
-  margin: 0 auto;
 }
 
 .container {
@@ -21,14 +60,22 @@ img {
   padding: 2rem;
 }
 
+#contry-box {
+  cursor: pointer;
+}
+
+#contry-box:hover .marker {
+  background-color: #300c0c91;
+}
+
 .marker {
   position: absolute;
   width: 30px;
   height: 30px;
-  background-color: #2bb03191;
+  background-color: #da232391;
   border-radius: 50%;
   color: #fff;
-  box-shadow: 0px 0px 0px 7px #2bb0312e;
+  box-shadow: 0px 0px 0px 7px #b02b2b2e;
 }
 
 .marker:after {
@@ -56,7 +103,7 @@ img {
 }
 
 .marker4 {
-  left: 67%;
+  left: 70%;
   top: 48%;
 }
 
@@ -70,7 +117,7 @@ img {
   top: 68%;
 }
 .marker7 {
-  left: 70%;
+  left: 76%;
   top: 48%;
 }
 .marker8 {
@@ -88,48 +135,4 @@ img {
 .marker11 {
   left: 57%;
   top: 58%;
-}
-
-.tooltip {
-  display: none;
-  width: 120px;
-  padding: 0.5rem 1.5rem;
-
-  text-align: center;
-  color: #05006d;
-  box-shadow: 1px 3px 10px 2px rgba(0, 0, 0, 0.05);
-  border-radius: 50px;
-  font-size: 14px;
-  background-color: #fff;
-
-  z-index: 20;
-}
-
-.tooltip:after {
-  content: "\25B2";
-  color: #fff;
-  width: 0;
-  height: 0;
-  top: -15px;
-  left: 45%;
-  font-size: 1.2rem;
-  text-shadow: 0px -3px 10px rgba(0, 0, 0, 0.05);
-  display: display;
-  position: absolute;
-}
-
-@keyframes pulse {
-  50% {
-    box-shadow: 0px 0px 0px 21px #2bb03100;
-  }
-  68.9% {
-    box-shadow: 0px 0px 0px 21px #2bb03100;
-  }
-
-  69% {
-    box-shadow: 0px 0px 0px 0px #2bb0312e;
-  }
-  100% {
-    box-shadow: 0px 0px 0px 7px #2bb0312e;
-  }
 }
