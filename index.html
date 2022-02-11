@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>코로나, 끝나지 않는 굴레</title>
     <link rel="stylesheet" href="./styles.module.css" />
+    <link rel="stylesheet" href="./world-map.module.css" />
     <script src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   </head>
@@ -68,5 +69,90 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBur_PMKN5jSmozFUuv4eC-gRhkBLC6hPM&callback=initMap&region=kr"
     ></script>
     <script src="./maps.js"></script>
+
+    <!-- <div id="world-map-box">
+      <div id="tooltip"></div>
+      <svg id="world-map" width="700" height="800"></svg>
+    </div>
+    <script src="./world-map.js"></script> -->
+    <div id="world-map-box">
+      <div class="tooltip" id="tooltip">North American Countries</div>
+      <div class="container">
+        <img
+          src="https://i.ibb.co/vcSnbGd/amcharts-pixel-Map-1.png"
+          alt="World Map"
+        />
+        <div class="overlay">
+          <div
+            id="marker1"
+            class="marker marker1"
+            data-count="3,224.09"
+            data-continent="Israel"
+            data-contrycode="IL"
+          ></div>
+          <div
+            class="marker marker2"
+            data-count="3,013.25"
+            data-continent="Germany"
+            data-contrycode="DE"
+          ></div>
+          <div
+            class="marker marker3"
+            data-count="1,245.89"
+            data-continent="Russia"
+            data-contrycode="RU"
+          ></div>
+          <div
+            class="marker marker4"
+            data-count="1,054.90"
+            data-continent="South Korea"
+            data-contrycode="KR"
+          ></div>
+          <div
+            class="marker marker5"
+            data-count="992.23"
+            data-continent="United Kingdom"
+            data-contrycode="UK"
+          ></div>
+          <div
+            class="marker marker6"
+            data-count="838.42"
+            data-continent="Brazil"
+            data-contrycode="BR"
+          ></div>
+          <div
+            class="marker marker7"
+            data-count="775.87"
+            data-continent="Japan"
+            data-contrycode="JP"
+          ></div>
+          <div
+            class="marker marker8"
+            data-count="562.60"
+            data-continent="United State"
+            data-contrycode="US"
+          ></div>
+          <div
+            class="marker marker9"
+            data-count="283.86"
+            data-continent="Canada"
+            data-contrycode="CA"
+          ></div>
+          <div
+            class="marker marker10"
+            data-count="93.73"
+            data-continent="South Africa"
+            data-contrycode="ZA"
+          ></div>
+          <div
+            class="marker marker11"
+            data-count="48.14"
+            data-continent="India"
+            data-contrycode="IN"
+          ></div>
+        </div>
+        <script src="./world-map.js"></script>
+      </div>
+    </div>
   </body>
 </html>

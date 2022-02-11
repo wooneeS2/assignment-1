@@ -167,3 +167,13 @@ body {
 #map-text-date {
   font-weight: bold;
 }
+
+#world-map-box {
+  width: 100%;
+  height: 100vh;
+}
+
+#world-map svg {
+  width: 1000px;
+  display: flex;
+}
