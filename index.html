@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>코로나, 끝나지 않는 굴레</title>
-    <link rel="stylesheet" href="./styles.module.css" />
-    <link rel="stylesheet" href="./world-map.module.css" />
-    <link rel="stylesheet" href="./chart.module.css" />
-    <link rel="stylesheet" href="./horizontal-scroll.module.css" />
+    <link rel="stylesheet" href="./task1/title.module.css" />
+    <link rel="stylesheet" href="./task2/google-maps.module.css" />
+    <link rel="stylesheet" href="./task3/world-map.module.css" />
+    <link rel="stylesheet" href="./task4/chart.module.css" />
+    <link rel="stylesheet" href="./specialTask/horizontal-scroll.module.css" />
     <script src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -76,7 +77,7 @@
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBur_PMKN5jSmozFUuv4eC-gRhkBLC6hPM&callback=initMap&region=kr"
     ></script>
-    <script src="./maps.js"></script>
+    <script src="./task2/google-maps.js"></script>
 
     <div id="world-map-box">
       <div id="world-map-contents">
@@ -96,7 +97,7 @@
           alt="World Map"
         />
         <div class="overlay">
-          <script src="./world-map.js"></script>
+          <script src="./task3/world-map.js"></script>
         </div>
       </div>
     </div>
@@ -109,8 +110,8 @@
       <canvas maintainAspectRatio="true" id="patient-chart"></canvas>
     </div>
 
-    <script src="./patientByDate.js"></script>
-    <script src="./chart.js"></script>
+    <script src="./task4/patientByDate.js"></script>
+    <script src="./task4/chart.js"></script>
 
     <div id="pinContainer">
       <div id="slideContainer">
@@ -192,6 +193,6 @@
         </section>
       </div>
     </div>
-    <script src="./horizontal-scroll.js"></script>
+    <script src="./specialTask/horizontal-scroll.js"></script>
   </body>
 </html>
