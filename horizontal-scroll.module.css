@@ -1,0 +1,54 @@
+#pinContainer {
+  width: 100%;
+  height: 100vh;
+}
+
+#slideContainer {
+  width: 400%;
+  height: 100%;
+}
+
+.panel {
+  float: left;
+  width: 25%;
+  height: 100%;
+
+  text-align: center;
+
+  display: block;
+  margin-top: 5rem;
+}
+
+.panel div {
+  display: flex;
+}
+
+.one img {
+  width: 50%;
+  height: 20%;
+}
+
+.two img {
+  width: 50%;
+  height: 20%;
+  opacity: 1;
+}
+
+.three img {
+  width: 50%;
+  height: 20%;
+}
+
+.four img {
+  width: 50%;
+  height: 20%;
+
+  opacity: 1;
+}
+
+#slider-text-box {
+  margin: 0 auto;
+  width: 50%;
+  justify-content: center;
+  word-break: keep-all;
+}
