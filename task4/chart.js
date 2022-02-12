@@ -2,6 +2,7 @@ const date = patientByDate.map(i => i.date.slice(5));
 const domesticPatient = patientByDate.map(i => i.domestic);
 const abroadPatient = patientByDate.map(i => i.abroad);
 const domesticDead = patientByDate.map(i => i.dead);
+
 const ctx = document.getElementById("patient-chart").getContext("2d");
 
 const red = "#B00323";
@@ -36,10 +37,10 @@ let chartOptions = {
     radius: {
       duration: 400,
       easing: "linear",
-      loop: context => context.active,
+      loop: false,
     },
   },
-  hoverRadius: 12,
+  hoverRadius: 10,
 
   interaction: {
     mode: "nearest",

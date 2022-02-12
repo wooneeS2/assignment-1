@@ -1,76 +1,80 @@
+const googleRed = "#C90E20";
+
+const wuhan = { lat: 30.777779, lng: 114.211827 };
+const map2Center = { lat: 36.526584, lng: 124.588121 };
+const incheonAirport = { lat: 37.458982, lng: 126.442953 };
+const japan = { lat: 36.114623, lng: 139.601028 };
+const incheonHospital = { lat: 37.478538, lng: 126.668512 };
+
 function initMap() {
   map = new google.maps.Map(document.getElementById("map1"), {
-    center: { lat: 30.485756, lng: 106.06061 },
-    zoom: 5.5,
+    center: wuhan,
+    zoom: 6,
   });
   new google.maps.Marker({
-    position: { lat: 30.472596, lng: 114.311268 },
+    position: wuhan,
     map: map,
     icon: {
       path: google.maps.SymbolPath.CIRCLE,
       scale: 54,
-      strokeColor: "#ff0000",
+      strokeColor: googleRed,
       strokeWeight: 3,
     },
   });
 
   map = new google.maps.Map(document.getElementById("map2"), {
-    center: { lat: 36.526584, lng: 124.588121 },
+    center: map2Center,
     zoom: 5,
   });
 
   new google.maps.Marker({
-    position: { lat: 30.777779, lng: 114.211827 },
+    position: wuhan,
     icon: { url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" },
     map: map,
   });
   new google.maps.Marker({
-    position: { lat: 37.458982, lng: 126.442953 },
+    position: incheonAirport,
     icon: { url: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" },
     map: map,
   });
 
   new google.maps.Marker({
-    position: { lat: 36.114623, lng: 139.601028 },
+    position: japan,
     icon: { url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" },
 
     map: map,
   });
-  const flightPlanCoordinates = [
-    new google.maps.LatLng(30.777779, 114.211827),
-    new google.maps.LatLng(37.458982, 126.442953),
-    new google.maps.LatLng(36.114623, 139.601028),
-  ];
-  const flightPath = new google.maps.Polyline({
+  const flightPlanCoordinates = [wuhan, incheonAirport, japan];
+  new google.maps.Polyline({
     path: flightPlanCoordinates,
     editable: false,
-    strokeColor: "#FF0000",
+    strokeColor: googleRed,
     strokeOpacity: 1.0,
     strokeWeight: 2,
     map: map,
   });
 
   map = new google.maps.Map(document.getElementById("map3"), {
-    center: { lat: 37.458982, lng: 126.442953 },
+    center: incheonAirport,
     zoom: 13,
   });
   new google.maps.Marker({
-    position: { lat: 37.461957, lng: 126.430676 },
+    position: incheonAirport,
     map: map,
     icon: {
       path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
       scale: 6,
-      strokeColor: "#ff0000",
+      strokeColor: googleRed,
       strokeWeight: 4,
     },
   });
   map = new google.maps.Map(document.getElementById("map4"), {
-    center: { lat: 37.478538, lng: 126.668512 },
+    center: incheonHospital,
     zoom: 16,
   });
 
   new google.maps.Marker({
-    position: { lat: 37.478859, lng: 126.668632 },
+    position: incheonHospital,
     map: map,
   });
 }
