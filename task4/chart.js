@@ -31,7 +31,7 @@ let chartData = {
 };
 
 let chartOptions = {
-  responsive: true,
+  responsive: false,
   animations: {
     radius: {
       duration: 400,
