@@ -7,8 +7,10 @@
     <title>코로나, 끝나지 않는 굴레</title>
     <link rel="stylesheet" href="./styles.module.css" />
     <link rel="stylesheet" href="./world-map.module.css" />
+    <link rel="stylesheet" href="./chart.module.css" />
     <script src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <div id="background-box">
@@ -76,9 +78,9 @@
           코로나19 확진자 발생 후 2년이 흘렀다. 코로나19는 여전히 종식되지
           않았다. 코로나 접종 완료율이 85%에 이르고 치료제까지 나왔지만 코로나는
           끝날 기미가 없다. 오히려 델타보다 전파력이 3배 강한 오미크론 변이가
-          출현해 세계적으로 5 차 대유행을 일으키고 있다.
+          출현해 세계적으로 5차 대유행을 일으키고 있다.
         </p>
-        <div class="tooltip" >
+        <div class="tooltip">
           국가에 마우스를 대면 10만명당 확진자를 확인 할 수 있습니다.
         </div>
       </div>
@@ -88,9 +90,19 @@
           alt="World Map"
         />
         <div class="overlay">
-          
-        <script src="./world-map.js"></script>
+          <script src="./world-map.js"></script>
+        </div>
       </div>
     </div>
+    <div id="chart-box">
+      <p id="chart-text-content">
+        국내도 오미크론 영향권에 들면서 한동안 진정세를 보이던 확진자가 증가세로
+        돌아섰다. 2월 4일 0시 기준 일일 신규 확진자는 2만7443명이다. 이날까지
+        누적 확진자는 93만4656명이다.
+      </p>
+      <canvas maintainAspectRatio="true" id="patient-chart"></canvas>
+    </div>
+    <script src="./patientByDate.js"></script>
+    <script src="./chart.js"></script>
   </body>
 </html>
