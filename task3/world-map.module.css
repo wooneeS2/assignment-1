@@ -1,7 +1,10 @@
 #world-map-box {
-  background-color: rgba(199, 198, 193, 0.1);
-  padding-top: 2rem;
+  width: 100%;
+  height: 100vh;
   margin: 0 auto;
+  padding-top: 2rem;
+
+  background-color: rgba(199, 198, 193, 0.1);
 }
 
 #world-map-contents {
@@ -9,7 +12,8 @@
 }
 
 #world-map-text-content {
-  width: 80%;
+  width: 60%;
+  max-width: 600px;
   padding: 1rem;
   margin: 0 auto;
   text-align: center;
@@ -24,9 +28,10 @@
 
 .tooltip {
   width: 30%;
+  max-width: 400px;
   padding: 1rem;
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: center;
 
   color: #3d0208;
@@ -38,13 +43,11 @@
   line-height: 1.5rem;
   word-break: keep-all;
 }
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
 
 .container img {
-  width: 100%;
+  margin: 0 auto;
+  margin-left: 3rem;
+  width: 90%;
   padding: 0.5rem;
 
   box-shadow: 1px 3px 10px 2px rgba(0, 0, 0, 0.05);
@@ -53,9 +56,11 @@
 
 .container {
   position: relative;
+  margin: 0 auto;
+  max-width: 800px;
+  justify-content: center;
   padding: 2rem;
   margin-top: 2rem;
-  margin-left: 1rem;
 }
 
 .marker {
@@ -85,56 +90,56 @@
 
 /* 이스라엘 */
 .marker1 {
-  left: 55%;
+  left: 58%;
   top: 55%;
 }
 /* 독일 */
 .marker2 {
-  left: 50%;
+  left: 55%;
   top: 42%;
 }
 /* 러시아 */
 .marker3 {
-  left: 60%;
+  left: 70%;
   top: 38%;
 }
 /* 한국 */
 .marker4 {
-  left: 70%;
+  left: 75%;
   top: 48%;
 }
 /* 영국 */
 .marker5 {
-  left: 43%;
+  left: 50%;
   top: 38%;
 }
 /* 브라질 */
 .marker6 {
-  left: 36%;
-  top: 66%;
+  left: 44%;
+  top: 65%;
 }
 /* 일본 */
 .marker7 {
-  left: 75%;
+  left: 82%;
   top: 48%;
 }
 /* 미국 */
 .marker8 {
-  left: 30%;
+  left: 35%;
   top: 45%;
 }
 /* 캐나다 */
 .marker9 {
-  left: 24%;
+  left: 30%;
   top: 36%;
 }
 /* 남아프리카공화국 */
 .marker10 {
-  left: 50%;
+  left: 55%;
   top: 70%;
 }
 /* 인도 */
 .marker11 {
-  left: 62%;
+  left: 65%;
   top: 58%;
 }
