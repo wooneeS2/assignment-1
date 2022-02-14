@@ -7,10 +7,12 @@ const japan = { lat: 36.114623, lng: 139.601028 };
 const incheonHospital = { lat: 37.478538, lng: 126.668512 };
 
 function initMap() {
+  //구글맵 로드
   map = new google.maps.Map(document.getElementById("map1"), {
     center: wuhan,
     zoom: 6,
   });
+  //구글맵 마커 설정
   new google.maps.Marker({
     position: wuhan,
     map: map,
@@ -44,6 +46,7 @@ function initMap() {
 
     map: map,
   });
+  //경로표시
   const flightPlanCoordinates = [wuhan, incheonAirport, japan];
   new google.maps.Polyline({
     path: flightPlanCoordinates,

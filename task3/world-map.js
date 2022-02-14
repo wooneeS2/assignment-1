@@ -1,6 +1,7 @@
 const overlay = document.querySelector(".overlay");
 const tooltip = document.querySelector(".tooltip");
 
+//지도에 나라별 마커 만들기
 const countryBoxElement = countryInfo.map((i, index) => {
   return `<div id="country-box">
     <div
@@ -10,11 +11,11 @@ const countryBoxElement = countryInfo.map((i, index) => {
     data-countrycode=${i.countryCode}
     /></div>`;
 });
-
 overlay.innerHTML = countryBoxElement.join("");
 
 const countryBox = document.querySelectorAll("#country-box");
 
+//마커 선택자
 function marker(id) {
   return document.querySelector(`.marker${id}`);
 }

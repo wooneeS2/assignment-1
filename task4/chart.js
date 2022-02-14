@@ -8,6 +8,7 @@ const ctx = document.getElementById("patient-chart").getContext("2d");
 const red = "#B00323";
 const darkRed = "#580111";
 
+//차트 x축 및 y축 설정
 let chartData = {
   labels: date,
   datasets: [
@@ -31,6 +32,7 @@ let chartData = {
   ],
 };
 
+//차트 옵션 설정
 let chartOptions = {
   responsive: false,
   animations: {
@@ -87,7 +89,8 @@ let chartOptions = {
   },
 };
 
-const myChart = new Chart(ctx, {
+//차트 생성
+const patientChart = new Chart(ctx, {
   type: "line",
   data: chartData,
   options: chartOptions,

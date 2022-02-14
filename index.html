@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>코로나, 끝나지 않는 굴레</title>
+
     <link rel="stylesheet" href="./style.module.css" />
     <link rel="stylesheet" href="./task1/title.module.css" />
     <link rel="stylesheet" href="./task2/google-maps.module.css" />
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="./task4/chart.module.css" />
     <link rel="stylesheet" href="./specialTask/horizontal-scroll.module.css" />
     <link rel="stylesheet" href="./lastPage/last-page.module.css" />
+
     <script src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -22,6 +24,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
   </head>
   <body>
+    <!-- 인트로페이지(task1) -->
     <div id="background-box">
       <p data-text="코로나19 국내 발생 2년," class="main-title">
         코로나19 국내 발생 2년,
@@ -30,6 +33,7 @@
       <i class="fa-solid fa-chevron-down" id="chevron-down"></i>
     </div>
 
+    <!-- 지도 페이지(task2) -->
     <div class="map-text-box">
       <p id="map-text-date">2020년 1월 18일</p>
       <p id="map-text-content">
@@ -80,6 +84,7 @@
     ></script>
     <script src="./task2/google-maps.js"></script>
 
+    <!-- 세계지도 페이지(task3) -->
     <div id="world-map-box">
       <div id="world-map-contents">
         <p id="world-map-text-content">
@@ -104,6 +109,8 @@
         </div>
       </div>
     </div>
+
+    <!-- 차트 페이지(task4) -->
     <div id="chart-box">
       <p id="chart-text-content">
         국내도 오미크론 영향권에 들면서 한동안 진정세를 보이던 확진자가 가파르게
@@ -112,10 +119,10 @@
       </p>
       <canvas maintainAspectRatio="true" id="patient-chart"></canvas>
     </div>
-
     <script src="./task4/patientByDate.js"></script>
     <script src="./task4/chart.js"></script>
 
+    <!-- 가로스크롤 페이지 -->
     <div id="pinContainer">
       <div id="slideContainer">
         <section class="panel one">
@@ -189,27 +196,31 @@
             <p>
               이렇게 달라진 삶 속에서 어른들은 마스크 쓰기 전을 그리워하고
               있지만, 아이들은 그리워할 기억이 없다. 아이들의 추억이 마스크로 꽉
-              차지 않도록 모두가 노력해서 2022년에는 모두가 코로나의 굴레에서
-              벗어나길 소망한다.
+              차지 않도록 모두가 노력해서 2022년에는 코로나의 굴레에서 벗어나길
+              소망한다.
             </p>
           </div>
         </section>
       </div>
     </div>
     <script src="./specialTask/horizontal-scroll.js"></script>
-    <div id="last-page">
-      <div id="last-text-box">
-        <p id="subtitle">프로젝트 기획</p>
-        <p id="content">이샘물 | 기자</p>
-        <p id="subtitle">사이트 제작</p>
-        <p id="content">김원희 | (예비) 뉴스룸 디벨로퍼</p>
-      </div>
-      <button
-        id="move-button"
-        onclick="window.open('https://original.donga.com/')"
-      >
-        더 많은 기사 보러 가기
-      </button>
+
+    <footer>
+      <div id="last-page">
+        <div id="last-text-box">
+          <p id="subtitle">프로젝트 기획</p>
+          <p id="content">이샘물 | 기자</p>
+          <br/>
+          <p id="subtitle">사이트 제작</p>
+          <p id="content">김원희 | (예비) 뉴스룸 디벨로퍼</p>
+        </div>
+        <button
+          id="move-button"
+          onclick="window.open('https://original.donga.com/')"
+        >
+          더 많은 기사 보러 가기
+        </button>
+    </footer>
     </div>
   </body>
 </html>
