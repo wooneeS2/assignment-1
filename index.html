@@ -30,11 +30,16 @@
         코로나19 국내 발생 2년,
       </p>
       <p data-text="끝나지 않는 굴레" class="main-title">끝나지 않는 굴레</p>
-      <i class="fa-solid fa-chevron-down" id="chevron-down"></i>
+      <div id="chevron-down">
+
+        <i class="fa-solid fa-chevron-down" ></i>
+      </div>
     </div>
+    
+    
 
     <!-- 지도 페이지(task2) -->
-    <div class="map-text-box">
+    <div class="map-text-box" id="map-text-box1">
       <p id="map-text-date">2020년 1월 18일</p>
       <p id="map-text-content">
         중국 후베이성 우한에 사는 A 씨(35)는 출국을 하루 앞두고 발열 오한 등
@@ -55,7 +60,7 @@
     <div class="map-box">
       <div class="map" id="map2"></div>
     </div>
-    <div class="map-text-box">
+    <div class="map-text-box"  id="map-text-box2">
       <p id="map-text-date">1월 19일 오후 12시 25분</p>
       <p id="map-text-content">
         비행기에서 내린 A씨가 인천공항 탑승동 게이트로 향했다. 체온을 쟀는데
@@ -66,7 +71,7 @@
     <div class="map-box">
       <div class="map" id="map3"></div>
     </div>
-    <div class="map-text-box">
+    <div class="map-text-box" >
       <p id="map-text-date">1월 19일 오후 3시</p>
       <p id="map-text-content">
         A 씨는 검역관과 임시격리실을 나와 공항 1층으로 나갔다. 건물 앞에 대기
@@ -83,6 +88,7 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBur_PMKN5jSmozFUuv4eC-gRhkBLC6hPM&callback=initMap&region=kr"
     ></script>
     <script src="./task2/google-maps.js"></script>
+    <script src="./task1/title.js"></script>
 
     <!-- 세계지도 페이지(task3) -->
     <div id="world-map-box">
@@ -206,6 +212,7 @@
         </section>
       </div>
     </div>
+    
     <script src="./specialTask/horizontal-scroll.js"></script>
 
     <footer>
