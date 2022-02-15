@@ -1,4 +1,4 @@
-const overlay = document.querySelector(".overlay");
+const overlay = document.querySelector(".worldmap-overlay");
 const tooltip = document.querySelector(".tooltip");
 
 //지도에 나라별 마커 만들기

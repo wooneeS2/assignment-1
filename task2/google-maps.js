@@ -1,10 +1,13 @@
 const googleRed = "#C90E20";
 
 const wuhan = { lat: 30.777779, lng: 114.211827 };
-const map2Center = { lat: 36.526584, lng: 124.588121 };
+const secondMapCenter = { lat: 36.526584, lng: 124.588121 };
 const incheonAirport = { lat: 37.458982, lng: 126.442953 };
 const japan = { lat: 36.114623, lng: 139.601028 };
 const incheonHospital = { lat: 37.478538, lng: 126.668512 };
+
+let screenWidth = screen.width;
+let secondMapZoom = screenWidth < 500 ? 4 : 5;
 
 function initMap() {
   //구글맵 로드
@@ -25,8 +28,8 @@ function initMap() {
   });
 
   map = new google.maps.Map(document.getElementById("map2"), {
-    center: map2Center,
-    zoom: 5,
+    center: secondMapCenter,
+    zoom: secondMapZoom,
   });
 
   new google.maps.Marker({

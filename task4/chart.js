@@ -34,7 +34,7 @@ let chartData = {
 
 //차트 옵션 설정
 let chartOptions = {
-  responsive: false,
+  responsive: true,
   animations: {
     radius: {
       duration: 400,
