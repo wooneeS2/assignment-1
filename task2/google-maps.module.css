@@ -16,7 +16,7 @@
 .map-text-box {
   width: 50%;
   max-width: 500px;
-
+  float: bottom;
   margin-top: 3rem;
   margin-left: 2rem;
   padding-left: 1rem;
