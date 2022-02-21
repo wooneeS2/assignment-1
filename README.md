@@ -18,7 +18,12 @@
 
 ## 🏃 데모
 
-- [여기를 클릭해서 보러가기](https://inspiring-mestorf-b33ef3.netlify.app/)
+- web
+ 
+    ![Feb-21-2022 19-46-42](https://user-images.githubusercontent.com/49189226/154940284-5a8c37e7-8f86-4501-ab3e-dc315d1b49c2.gif)
+- mobile
+
+    ![Feb-21-2022 19-45-39](https://user-images.githubusercontent.com/49189226/154940178-efc2d449-d814-4e30-a01a-1a04c665a1c7.gif)
 - 모바일 및 태블릿 환경에서도 작동합니다.
 
 ## 🛠 프로젝트 구조 및 기능
