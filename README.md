@@ -56,7 +56,7 @@
 **lastPage**
 
 - 기획자 및 개발자 표시
-- [디 오리지널](https://original.donga.com/)로 연결되는 버튼
+
 
 **style.module.css**
 
